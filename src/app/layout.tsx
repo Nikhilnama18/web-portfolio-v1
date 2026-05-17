@@ -23,9 +23,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col relative selection:bg-gold-500/30 selection:text-gold-400">
         <Spotlight />
-        <main className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          {children}
-        </main>
+        {children}
         
         {/* Floating Bottom Navigation */}
         <LiquidNav />
