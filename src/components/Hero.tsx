@@ -9,7 +9,8 @@ export default function Hero() {
     <section id="about" className="min-h-screen flex flex-col justify-center max-w-4xl pt-10">
       <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-2">
         Hi, I&apos;m <br className="sm:hidden" />
-        <span className="text-gold-500 inline-block">
+        <span className="inline-flex flex-wrap items-baseline gap-x-2 font-mono text-[0.88em] leading-none text-gold-500">
+          <span className="text-white/70">{`{`}</span>
           <TypeAnimation
             sequence={[
               "Nikhil Nama",
@@ -23,6 +24,7 @@ export default function Hero() {
             repeat={0}
             cursor={true}
           />
+          <span className="text-white/70">{`};`}</span>
         </span>
       </h1>
       
