@@ -20,8 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col relative selection:bg-gold-500/30 selection:text-gold-400">
+    <html lang="en" className={`${inter.variable} h-full antialiased`} suppressHydrationWarning>
+      <body
+        className="min-h-full flex flex-col relative selection:bg-gold-500/30 selection:text-gold-400"
+        suppressHydrationWarning
+      >
         <Spotlight />
         {children}
         
