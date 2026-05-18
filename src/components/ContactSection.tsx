@@ -178,7 +178,8 @@ export default function ContactSection() {
         </p>
 
         <p className="mt-4 max-w-2xl text-base leading-7 text-white/60 sm:text-lg">
-          If you're hiring, collaborating, or working on an interesting engineering problem, feel free to reach out.
+          If you&apos;re hiring, collaborating, or working on an interesting engineering problem,
+          feel free to reach out.
         </p>
       </div>
 
@@ -187,7 +188,7 @@ export default function ContactSection() {
           onSubmit={handleSubmit}
           className="relative w-full max-w-3xl overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-xl sm:p-8"
         >
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),transparent_26%),radial-gradient(circle_at_top,rgba(212,175,55,0.13),transparent_36%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.14),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.05),transparent_28%)]" />
 
           <div className="relative grid gap-5">
             <input
