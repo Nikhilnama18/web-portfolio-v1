@@ -1,33 +1,117 @@
-This is a premium [Next.js](https://nextjs.org) developer portfolio for Nikhil Nama with a dark liquid-glass visual system and warm gold accents.
+# Nikhil Nama Portfolio
 
-## Getting Started
+A premium developer portfolio built to showcase Work, experience, skills, and contact details through a polished dark UI with warm gold accents and liquid-glass styling.
 
-Create a local environment file before starting the app:
+## Live Project
+
+- Deployment Platform: [Vercel](https://vercel.com/)
+
+## Who Built It
+
+Built by **Nikhil Nama**.
+
+- X (Twitter): [https://x.com/Nick_1807](https://x.com/Nick_1807)
+- LinkedIn: [https://www.linkedin.com/in/nikhilnama18/](https://www.linkedin.com/in/nikhilnama18/)
+
+## About The Project
+
+This repository contains a responsive personal portfolio built with Next.js, React, TypeScript, and Tailwind CSS. The experience is designed as a personal brand statement as much as a technical showcase, featuring:
+
+- A premium dark theme with gold highlights
+- Liquid-glass cards and navigation
+- A spotlight mouse-tracking effect
+- Animated section transitions
+- An interactive experience section
+- A skills layout tailored for mobile and desktop
+- A contact form powered by Web3Forms
+- A large signature-style footer treatment
+
+If you were referring to this as a "game," this repo itself is currently a portfolio website codebase.
+
+
+## Technologies Used
+
+- [Next.js 16](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide React](https://lucide.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Web3Forms](https://web3forms.com/) for contact form handling
+- [Vercel](https://vercel.com/) for deployment
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── ContactSection.tsx
+│   ├── EducationSection.tsx
+│   ├── ExperienceSection.tsx
+│   ├── Hero.tsx
+│   ├── LiquidNav.tsx
+│   ├── ProjectsSection.tsx
+│   ├── SectionShell.tsx
+│   ├── SignatureFooter.tsx
+│   ├── SkillsSection.tsx
+│   ├── SocialLinks.tsx
+│   └── Spotlight.tsx
+└── data/
+    ├── experience.ts
+    └── skills.ts
+```
+
+## Local Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create a local environment file:
 
 ```bash
 cp .env.example .env.local
 ```
 
-Then add your Web3Forms key:
+3. Add your Web3Forms access key to `.env.local`:
 
 ```bash
 NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your_web3forms_access_key
 ```
 
-First, run the development server:
+4. Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-The contact section submits directly to Web3Forms from the client, so no custom API route is required for basic portfolio inquiries.
+- `npm run dev` - start the development server
+- `npm run build` - create a production build
+- `npm run start` - run the production server
+- `npm run lint` - run ESLint
+
+## Deployment
+
+This project is deployed on [Vercel](https://vercel.com/). To deploy your own version:
+
+1. Push the repository to GitHub
+2. Import the repo into Vercel
+3. Add the required environment variable:
+   `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+4. Deploy
+
+## Notes
+
+- The contact form depends on a valid Web3Forms public access key.
+- The codebase is structured to be reusable as a premium portfolio template.
