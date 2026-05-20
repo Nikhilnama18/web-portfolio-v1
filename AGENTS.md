@@ -21,15 +21,24 @@ The project uses Next.js App Router (`src/app`) with Tailwind CSS v4 and TypeScr
 ```text
 src/
 ├── app/
-│   ├── layout.tsx      # Main HTML structure. Imports Inter font, applies global dark background, and mounts global UI like <Spotlight /> and <LiquidNav />.
-│   ├── page.tsx        # The main landing page. A scrollable container that stacks all semantic <section> components (Hero, Experience, Projects, etc.).
-│   └── globals.css     # Global CSS. Defines custom Tailwind @theme colors (gold-500, etc.) and custom utilities (.no-scrollbar).
+│   ├── layout.tsx          # Main HTML structure. Imports Inter, global styles, and mounts <Spotlight /> plus the fixed <LiquidNav />.
+│   ├── page.tsx            # Main landing page. Stacks Hero, Experience, Projects, Skills, Education, Contact, then the oversized SignatureFooter.
+│   └── globals.css         # Global CSS. Defines shared theme tokens, gold accents, and utility classes like .no-scrollbar.
 ├── components/
-│   ├── LiquidNav.tsx   # Fixed bottom navigation. Glassmorphic pill shape. Uses IntersectionObserver (planned) or scroll spy logic to highlight active tab. Uses Framer Motion for the glowing gold layout indicator.
-│   ├── Spotlight.tsx   # "use client" component tracking mouse coordinates to render the gold background glow on desktop.
-│   ├── Hero.tsx        # Top section containing the "Hi, I'm" react-type-animation and react-icons social links.
-│   └── ...             # Future components: ExperienceCard, ProjectCard, SkillPill, etc.
-└── data/               # (Planned) Will contain all the static data objects (projects, experience array) so UI components remain generic and reusable.
+│   ├── ContactSection.tsx   # Contact section near the end of the page.
+│   ├── EducationSection.tsx # Education section for academic background.
+│   ├── ExperienceSection.tsx# Interactive experience timeline with scroll/selection behavior.
+│   ├── Hero.tsx             # Intro hero with the typing effect and social/profile links.
+│   ├── LiquidNav.tsx        # Fixed bottom glass navigation with active-state motion.
+│   ├── ProjectsSection.tsx  # Projects section entry point; currently uses the shared SectionShell placeholder pattern.
+│   ├── SectionShell.tsx     # Reusable section wrapper for placeholder content blocks.
+│   ├── SignatureFooter.tsx  # Large scroll-revealed "Nikhil Nama" footer treatment.
+│   ├── SkillsSection.tsx    # Skills section for technology/tooling coverage.
+│   ├── SocialLinks.tsx      # Shared social/profile link row used by the hero.
+│   └── Spotlight.tsx        # "use client" mouse-tracking gold glow rendered behind the page.
+└── data/
+    ├── experience.ts        # Structured experience content and highlight metrics for the Experience section.
+    └── skills.ts            # Skills list rendered by the Skills section.
 ```
 
 ## 🛠️ Developer Rules for AI Agents
