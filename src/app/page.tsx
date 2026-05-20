@@ -9,7 +9,7 @@ import SignatureFooter from "@/components/SignatureFooter";
 export default function Home() {
   return (
     <>
-      <div className="relative z-10 bg-[#0f0f11] w-full shadow-[0_40px_80px_rgba(0,0,0,0.9)] pb-24">
+      <div className="relative z-10 bg-[#151312] w-full shadow-[0_40px_80px_rgba(0,0,0,0.9)] pb-24">
         <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-24">
           <Hero />
           <ExperienceSection />

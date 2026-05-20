@@ -2,7 +2,7 @@
 import type { CSSProperties } from "react";
 import { useEffect, useRef } from "react";
 
-const GOLD_RGB = "212, 175, 55";
+const ORANGE_RGB = "244, 108, 56";
 
 export default function Spotlight() {
   const spotlightRef = useRef<HTMLDivElement | null>(null);
@@ -63,7 +63,7 @@ export default function Spotlight() {
       <div
         className="absolute inset-0 mix-blend-screen"
         style={{
-          backgroundImage: `radial-gradient(closest-side, rgba(${GOLD_RGB}, 0.16), rgba(${GOLD_RGB}, 0.07) 34%, rgba(${GOLD_RGB}, 0.025) 62%, transparent 100%)`,
+          backgroundImage: `radial-gradient(closest-side, rgba(${ORANGE_RGB}, 0.28), rgba(${ORANGE_RGB}, 0.12) 34%, rgba(${ORANGE_RGB}, 0.04) 62%, transparent 100%)`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "32rem 32rem",
@@ -75,7 +75,7 @@ export default function Spotlight() {
       <div
         className="absolute inset-0 mix-blend-screen"
         style={{
-          backgroundImage: `radial-gradient(closest-side, rgba(${GOLD_RGB}, 0.055), rgba(${GOLD_RGB}, 0.02) 46%, transparent 100%)`,
+          backgroundImage: `radial-gradient(closest-side, rgba(${ORANGE_RGB}, 0.1), rgba(${ORANGE_RGB}, 0.04) 46%, transparent 100%)`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "46rem 46rem",
