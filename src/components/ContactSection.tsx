@@ -4,6 +4,7 @@ import type { FormEvent } from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import {
+  ArrowRight,
   Check,
   LoaderCircle,
   Mail,
@@ -117,14 +118,14 @@ export default function ContactSection() {
             <div
               className={
                 isSuccessToast
-                  ? "relative overflow-hidden rounded-[1.75rem] border border-gold-500/30 bg-[#141414]/80 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.45),0_0_0_1px_rgba(212,175,55,0.08)] backdrop-blur-2xl"
+                  ? "relative overflow-hidden rounded-[1.75rem] border border-gold-500/30 bg-[#141414]/80 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.45),0_0_0_1px_rgba(244,108,56,0.08)] backdrop-blur-2xl"
                   : "relative overflow-hidden rounded-[1.75rem] border border-rose-400/25 bg-[#141414]/80 p-4 shadow-[0_24px_80px_rgba(0,0,0,0.45),0_0_0_1px_rgba(244,63,94,0.08)] backdrop-blur-2xl"
               }
             >
               <div
                 className={
                   isSuccessToast
-                    ? "absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.26),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.12),transparent_45%)]"
+                    ? "absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,108,56,0.26),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.12),transparent_45%)]"
                     : "absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,63,94,0.22),transparent_38%),linear-gradient(135deg,rgba(255,255,255,0.12),transparent_45%)]"
                 }
               />
@@ -188,7 +189,7 @@ export default function ContactSection() {
           onSubmit={handleSubmit}
           className="relative w-full max-w-3xl overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur-xl sm:p-8"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(212,175,55,0.14),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.05),transparent_28%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(244,108,56,0.14),transparent_38%),linear-gradient(180deg,rgba(255,255,255,0.05),transparent_28%)]" />
 
           <div className="relative grid gap-5">
             <input
@@ -236,17 +237,12 @@ export default function ContactSection() {
               <div className="relative w-full sm:w-auto">
                 <motion.button
                   type="submit"
-                  whileHover={{ y: -1 }}
-                  whileTap={{
-                    y: 1,
-                    boxShadow:
-                      "inset 10px 10px 24px rgba(120,84,7,0.48), inset -10px -10px 24px rgba(248,226,154,0.18)",
-                  }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   disabled={isSubmitting}
                   transition={{ type: "spring", stiffness: 320, damping: 22 }}
-                  className="relative inline-flex h-16 w-full items-center justify-center rounded-full border border-[#f6dea1]/40 bg-[linear-gradient(180deg,#f4d97a_0%,#dfba4c_46%,#c9991a_100%)] px-8 text-xl font-medium tracking-[-0.02em] text-[#2a1d05] shadow-[10px_10px_24px_rgba(107,78,11,0.34),-10px_-10px_24px_rgba(255,240,189,0.18)] transition disabled:cursor-not-allowed disabled:opacity-75 sm:min-w-64"
+                  className="group relative flex h-16 w-full items-center justify-between rounded-full bg-[#F46C38] pl-8 pr-2 text-xl font-bold tracking-tight text-[#151312] transition disabled:cursor-not-allowed disabled:opacity-75 sm:min-w-60 overflow-hidden hover:bg-[#F78C62]"
                 >
-                  <span className="pointer-events-none absolute inset-[1px] rounded-full bg-[linear-gradient(180deg,rgba(255,255,255,0.32),rgba(255,255,255,0.06)_28%,transparent_40%)]" />
                   <span className="relative flex items-center justify-center gap-2">
                     {isSubmitting ? (
                       <>
@@ -254,9 +250,15 @@ export default function ContactSection() {
                         Sending...
                       </>
                     ) : (
-                      "Send message"
+                      "Submit"
                     )}
                   </span>
+
+                  {!isSubmitting && (
+                    <div className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#151312] transition-transform group-hover:translate-x-0.5">
+                      <ArrowRight className="h-6 w-6 stroke-[2.5] text-[#151312]" />
+                    </div>
+                  )}
                 </motion.button>
               </div>
             </div>

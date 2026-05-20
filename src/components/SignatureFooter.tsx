@@ -15,7 +15,7 @@ export default function SignatureFooter() {
   const textColor = useTransform(
     scrollYProgress,
     [0, 0.45, 1],
-    ["rgba(42, 42, 44, 0.94)", "rgba(60, 60, 62, 0.98)", "rgba(76, 76, 78, 1)"]
+    ["rgba(180, 70, 30, 0.8)", "rgba(210, 85, 40, 0.9)", "rgba(244, 108, 56, 1)"]
   );
 
   return (
