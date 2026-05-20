@@ -1,10 +1,13 @@
 # Nikhil Nama Portfolio
 
-A premium developer portfolio built to showcase Work, experience, skills, and contact details through a polished dark UI with warm gold accents and liquid-glass styling.
+![Title Section](public/assets/screenshot_hero.png)
+![Footer Section](public/assets/screenshot_footer.png)
+
+A premium developer portfolio built to showcase Work, experience, skills, and contact details through a polished dark UI with vibrant orange accents and liquid-glass styling.
 
 ## Live Project
 
-- Deployment Platform: [Vercel](https://vercel.com/)
+- Deployment Link: [https://nikhil-nama.vercel.app/](https://nikhil-nama.vercel.app/)
 
 ## Who Built It
 
@@ -17,7 +20,7 @@ Built by **Nikhil Nama**.
 
 This repository contains a responsive personal portfolio built with Next.js, React, TypeScript, and Tailwind CSS. The experience is designed as a personal brand statement as much as a technical showcase, featuring:
 
-- A premium dark theme with gold highlights
+- A premium dark theme with vibrant orange highlights
 - Liquid-glass cards and navigation
 - A spotlight mouse-tracking effect
 - Animated section transitions
