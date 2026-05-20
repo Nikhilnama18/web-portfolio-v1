@@ -117,7 +117,7 @@ export default function ExperienceSection() {
 
   return (
     <section id="experience" className="relative scroll-mt-24 py-6 lg:py-0">
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full">
         <div className="mb-8 max-w-2xl lg:hidden">
           <h2 className="mb-3 flex items-center gap-2 text-3xl font-bold text-white">
             <Briefcase className="h-6 w-6 text-gold-500" />

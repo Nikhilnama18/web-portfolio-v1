@@ -4,7 +4,7 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Hero() {
   return (
-    <section id="about" className="min-h-screen flex flex-col justify-center max-w-6xl pt-10">
+    <section id="about" className="min-h-[60vh] flex flex-col justify-center max-w-6xl pt-10">
       <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight leading-[0.95] text-white mb-2">
         Hi, I&apos;m{" "}
         <span className="inline-flex flex-nowrap items-baseline gap-x-1 sm:gap-x-2 whitespace-nowrap font-mono text-[0.76em] sm:text-[0.84em] leading-none text-gold-500">
