@@ -127,9 +127,11 @@ export default function ExperienceSection() {
 
         <div className="lg:hidden">
             <div className="mb-6">
-              <p className="text-3xl font-bold tracking-[-0.04em] text-white">
-                {experienceCompany.name}
-              </p>
+              <img
+                src="/vimeo-wordmark.png"
+                alt={experienceCompany.name}
+                className="h-8 w-auto object-contain"
+              />
             </div>
 
             <div className="mb-6 flex gap-3 overflow-x-auto pb-2 no-scrollbar">
@@ -177,9 +179,11 @@ export default function ExperienceSection() {
               <div className="grid h-full grid-cols-[minmax(15rem,18rem)_minmax(0,1fr)] items-start gap-14 xl:gap-[4.5rem]">
                 <div className="self-center">
                   <div className="mb-10">
-                    <h3 className="text-5xl font-bold tracking-[-0.04em] text-white">
-                      {experienceCompany.name}
-                    </h3>
+                    <img
+                      src="/vimeo-wordmark.png"
+                      alt={experienceCompany.name}
+                      className="h-12 w-auto object-contain"
+                    />
                     <p className="mt-4 max-w-xs text-sm leading-7 text-white/58">
                       {experienceCompany.intro}
                     </p>

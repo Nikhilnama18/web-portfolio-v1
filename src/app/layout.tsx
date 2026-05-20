@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import LiquidNav from "@/components/LiquidNav";
 import Spotlight from "@/components/Spotlight";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,6 +26,7 @@ export default function RootLayout({
         className="min-h-full flex flex-col relative selection:bg-gold-500/30 selection:text-gold-400"
         suppressHydrationWarning
       >
+        <ScrollToTop />
         <Spotlight />
         {children}
         
