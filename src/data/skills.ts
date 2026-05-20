@@ -16,7 +16,7 @@ export const skills = [
   "Memcached",
   "AWS",
   "GCP",
-  "CI/CD",
+  "Jenkins",
   "GitHub Actions",
   "DataDog",
 ];

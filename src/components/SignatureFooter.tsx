@@ -34,8 +34,10 @@ export default function SignatureFooter() {
               color: textColor,
             }}
           >
-            <span className="block text-[32vw] sm:text-[30vw] md:hidden">Nikhil</span>
-            <span className="block text-[32vw] sm:text-[30vw] md:hidden">Nama</span>
+            <span className="inline-flex flex-col items-start md:hidden text-[32vw] sm:text-[30vw]">
+              <span>Nikhil</span>
+              <span>Nama</span>
+            </span>
             <span className="hidden md:block md:text-[16.5vw] lg:text-[16.5vw] xl:text-[16.5vw] whitespace-nowrap">
               Nikhil Nama
             </span>
