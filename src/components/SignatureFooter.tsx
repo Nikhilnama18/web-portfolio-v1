@@ -24,7 +24,7 @@ export default function SignatureFooter() {
       <div ref={containerRef} className="h-[55vh] w-full pointer-events-none" />
 
       {/* Fixed Footer drawn behind the main content */}
-      <footer className="fixed bottom-0 left-0 w-full h-screen z-0 overflow-hidden bg-[#141415]">
+      <footer className="fixed bottom-0 left-0 w-full h-screen z-0 overflow-hidden bg-black">
         <div className="absolute inset-0 flex items-end justify-center overflow-hidden px-4 sm:px-6 lg:px-10 pb-24 sm:pb-16">
           <motion.h2
             className="select-none text-center font-bold leading-[0.82] tracking-[-0.08em]"
