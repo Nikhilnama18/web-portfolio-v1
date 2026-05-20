@@ -38,7 +38,7 @@ export const experienceRoles: ExperienceRole[] = [
     highlights: [
       { value: "62%", label: "new-user adoption lift" },
       { value: "12%", label: "comment engagement growth" },
-      { value: "20%", label: "production data migrated" },
+      { value: "20%", label: "comments data migrated" },
     ],
   },
   {
