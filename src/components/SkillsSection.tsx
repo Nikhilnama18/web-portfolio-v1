@@ -6,7 +6,7 @@ import { Wrench } from "lucide-react";
 import { skills } from "@/data/skills";
 
 const skillPillClass =
-  "flex min-h-[3.5rem] items-center justify-center rounded-full bg-[#121214] px-7 py-3 text-center text-[17px] font-medium leading-tight tracking-[-0.02em] text-[#f1c9ac] shadow-[-8px_-8px_16px_rgba(255,255,255,0.03),8px_8px_16px_rgba(0,0,0,0.7),inset_1px_1px_1px_rgba(255,255,255,0.06),inset_-1px_-1px_1px_rgba(0,0,0,0.8)] transition-all duration-300 hover:shadow-[-4px_-4px_10px_rgba(255,255,255,0.03),4px_4px_10px_rgba(0,0,0,0.7),inset_1px_1px_1px_rgba(255,255,255,0.06),inset_-1px_-1px_1px_rgba(0,0,0,0.8)] hover:-translate-y-0.5 md:min-w-[11rem] md:px-8 lg:min-w-[12.5rem] lg:px-10";
+  "flex min-h-[3.5rem] items-center justify-center rounded-full bg-[#121214] px-7 py-3 text-center text-[17px] font-medium leading-tight tracking-[-0.02em] text-gold-500 shadow-[-8px_-8px_16px_rgba(255,255,255,0.03),8px_8px_16px_rgba(0,0,0,0.7),inset_1px_1px_1px_rgba(255,255,255,0.06),inset_-1px_-1px_1px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-0.5 hover:text-gold-400 hover:shadow-[-4px_-4px_10px_rgba(255,255,255,0.03),4px_4px_10px_rgba(0,0,0,0.7),inset_1px_1px_1px_rgba(255,255,255,0.06),inset_-1px_-1px_1px_rgba(0,0,0,0.8)] md:min-w-[11rem] md:px-8 lg:min-w-[12.5rem] lg:px-10";
 const desktopGap = 24;
 const desktopOffset = 48;
 

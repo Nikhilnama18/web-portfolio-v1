@@ -10,10 +10,25 @@ import { experienceCompany, experienceRoles } from "@/data/experience";
 export default function ExperienceSection() {
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
   const stepRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const mobileRoleButtonRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const isClickScrolling = useRef(false);
   const clickTargetIndex = useRef<number | null>(null);
   const clickScrollTimeout = useRef<number | null>(null);
   const activeRole = experienceRoles[activeRoleIndex];
+
+  const centerMobileRoleButton = (index: number) => {
+    const button = mobileRoleButtonRefs.current[index];
+
+    if (!button) {
+      return;
+    }
+
+    button.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  };
 
   useEffect(() => {
     const clearClickScrollState = () => {
@@ -125,7 +140,13 @@ export default function ExperienceSection() {
                   <button
                     key={role.id}
                     type="button"
-                    onClick={() => setActiveRoleIndex(index)}
+                    ref={(element) => {
+                      mobileRoleButtonRefs.current[index] = element;
+                    }}
+                    onClick={() => {
+                      setActiveRoleIndex(index);
+                      centerMobileRoleButton(index);
+                    }}
                     className={clsx(
                       "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition-colors",
                       isActive
