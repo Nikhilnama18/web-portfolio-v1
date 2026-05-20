@@ -4,6 +4,7 @@ import "./globals.css";
 import LiquidNav from "@/components/LiquidNav";
 import Spotlight from "@/components/Spotlight";
 import ScrollToTop from "@/components/ScrollToTop";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,6 +33,7 @@ export default function RootLayout({
         
         {/* Floating Bottom Navigation */}
         <LiquidNav />
+        <Analytics />
       </body>
     </html>
   );
