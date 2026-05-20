@@ -36,7 +36,7 @@ export const projects: Project[] = [
       "Framer Motion",
     ],
     githubUrl: "https://github.com/Nikhilnama18/web-portfolio-v1",
-    liveUrl: "#",
+    liveUrl: "https://nikhil-nama.vercel.app/",
   },
   {
     id: "shrink-url",
