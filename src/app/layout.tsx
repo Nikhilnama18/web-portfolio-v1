@@ -12,8 +12,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Nama | Portfolio",
-  description: "Web Developer Portfolio of Nikhil Nama",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://nikhil-nama.vercel.app"
+  ),
+  title: "Nikhil Nama | Software Engineer",
+  description:
+    "Software Engineer building full-stack applications with thoughtful user experiences and reliable backend systems.",
+  applicationName: "Nikhil Nama Portfolio",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Nikhil Nama",
+    description: "Software Engineer building full-stack applications.",
+    siteName: "Nikhil Nama Portfolio",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Nikhil Nama - Software Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nikhil Nama",
+    description: "Software Engineer building full-stack applications.",
+    images: ["/twitter-image"],
+  },
 };
 
 export default function RootLayout({
